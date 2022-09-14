@@ -12,9 +12,6 @@ RUN apk add \
   # zsh
   zsh \
   zsh-vcs \
-  # docker
-  docker \
-  docker-compose \
   # other commands
   openssh \
   tree \
