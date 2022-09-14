@@ -1,0 +1,11 @@
+[user]
+	name = HsuTing
+	email = hsuting0106@gmail.com
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
+[alias]
+	gr = log --date=short --graph --pretty=format:'%C(yellow)%h%Creset %ad %C(bold green)%an%Creset %s%C(yellow)%d%Creset'
+[pull]
+	rebase = false
