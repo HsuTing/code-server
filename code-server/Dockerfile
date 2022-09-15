@@ -42,3 +42,4 @@ RUN code-server --install-extension GrapeCity.gc-excelviewer
 
 # config
 COPY ./root /root
+RUN vim +PluginInstall +qall &>/dev/null
