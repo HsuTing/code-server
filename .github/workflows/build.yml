@@ -9,6 +9,7 @@ jobs:
       matrix:
         name: [code-server]
     with:
+      registry: hsuting
       name: ${{ matrix.name }}
       context: ./${{ matrix.name }}
       file: ./${{ matrix.name }}/Dockerfile
