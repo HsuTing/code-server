@@ -1,4 +1,4 @@
-FROM mikojs/code-server:main
+FROM ghcr.io/mikojs/code-server:main
 
 # install packages
 RUN apk add \
