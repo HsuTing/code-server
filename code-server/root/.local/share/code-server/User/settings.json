@@ -1,0 +1,13 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "editor.tabSize": 2,
+  "terminal.integrated.defaultProfile.linux": "tmux",
+  "editor.minimap.enabled": false,
+  "html.autoClosingTags": false,
+  "javascript.autoClosingTags": false,
+  "typescript.autoClosingTags": false,
+  "files.insertFinalNewline": true,
+  "files.autoSave": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.startupEditor": "none"
+}
