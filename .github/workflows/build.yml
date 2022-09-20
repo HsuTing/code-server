@@ -3,7 +3,7 @@ name: build
 on: [push]
 
 jobs:
-  build-and-push-images:
+  build-docker:
     uses: mikojs/actions/.github/workflows/build-docker.yml@main
     with:
       name: hsuting/code-server
