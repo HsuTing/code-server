@@ -1,3 +1,3 @@
-# Docker images
+# Code server
 
-Here are some customized images.
+In this repository, it is my customize code-server based on [ghcr.io/mikojs/code-server](https://github.com/mikojs/docker-images/tree/main/docker-images/code-server).
