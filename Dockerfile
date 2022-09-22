@@ -1,3 +1,5 @@
+FROM ghcr.io/mikojs/base:main as base
+
 FROM ghcr.io/mikojs/code-server:main
 
 # install packages
@@ -43,3 +45,7 @@ RUN code-server --install-extension GrapeCity.gc-excelviewer
 # config
 COPY ./root /root
 RUN vim +PluginInstall +qall &>/dev/null
+
+# bin
+COPY --from=base /bin/dpsql /bin/dpsql
+COPY --from=base /bin/node-parser /bin/node-parser
