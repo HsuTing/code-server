@@ -41,6 +41,7 @@ RUN git clone https://github.com/sindresorhus/pure ~/.zsh/pure
 RUN code-server --install-extension vscodevim.vim
 RUN code-server --install-extension ms-azuretools.vscode-docker
 RUN code-server --install-extension GrapeCity.gc-excelviewer
+RUN mkdir /root/work
 
 # config
 COPY ./root /root
@@ -49,3 +50,6 @@ RUN vim +PluginInstall +qall &>/dev/null
 # bin
 COPY --from=base /bin/dpsql /bin/dpsql
 COPY --from=base /bin/node-parser /bin/node-parser
+
+# run
+ENTRYPOINT ["entrypoint", "code-server /root/work"]
