@@ -1,5 +1,11 @@
 _dnode() {
-  local parsed_node_version=$(node-parser $1)
+  local type=$1
+
+  if [[ $type == "npx" ]]; then
+    type="npm"
+  fi
+
+  local parsed_node_version=$(node-parser $type)
   local node_version=${DOCKER_NODE_VERSION:=lts-alpine}
 
   if [[ $parsed_node_version ]]; then
@@ -26,4 +32,8 @@ dyarn() {
 
 dnpm() {
   _dnode npm $@
+}
+
+dnpx() {
+  _dnode npx $@
 }
