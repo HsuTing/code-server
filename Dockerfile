@@ -48,8 +48,8 @@ COPY ./root /root
 RUN vim +PluginInstall +qall &>/dev/null
 
 # bin
+COPY --from=base /bin/dnode /bin/dnode
 COPY --from=base /bin/dpsql /bin/dpsql
-COPY --from=base /bin/node-parser /bin/node-parser
 
 # run
 ENTRYPOINT ["entrypoint", "code-server /root/work"]
