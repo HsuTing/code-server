@@ -1,9 +1,8 @@
-# dnode
-alias dyarn="dnode yarn"
-alias dnpm="dnode npm"
-alias dnpx="dnode npx"
+# node
+alias dnode="dcmd node --versions lts-alpine --"
+alias dyarn="dcmd node --versions DOCKER_YARN_VERSION lts-alpine -- yarn"
+alias dnpm="dcmd node --versions DOCKER_NPM_VERSION lts-alpine -- npm"
+alias dnpx="dcmd node --versions DOCKER_NPM_VERSION lts-alpine -- npx"
 
-# dcargo
-function dcargo {
-  ddocker run -it rust:${DOCKER_RUST_VERSION:=alpine} cargo $@
-}
+# rust
+alias dcargo="dcmd rust cargo"
