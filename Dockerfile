@@ -52,6 +52,7 @@ COPY --from=base /bin/dnode /bin/dnode
 COPY --from=base /bin/dpsql /bin/dpsql
 
 # env
+ENV NPM_CONFIG_CACHE=/root/.cache/.npm
 ENV CARGO_HOME=/root/.cache/.cargo
 
 # run
