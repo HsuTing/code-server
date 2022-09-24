@@ -1,8 +1,10 @@
 # node
-alias dnode="dcmd node --versions lts-alpine --"
-alias dyarn="dcmd node --versions DOCKER_YARN_VERSION lts-alpine -- yarn"
-alias dnpm="dcmd node --versions DOCKER_NPM_VERSION lts-alpine -- npm"
-alias dnpx="dcmd node --versions DOCKER_NPM_VERSION lts-alpine -- npx"
+alias dnode="ddocker run -it --rm \"node:<DOCKER_NODE_VERSION|lts-alpine>\""
+alias dyarn="ddocker run -it --rm \"node:<DOCKER_YARN_VERSION|DOCKER_NODE_VERSION|lts-alpine>\" yarn"
+alias dnpm="ddocker run -it --rm \"node:<DOCKER_NPM_VERSION|DOCKER_NODE_VERSION|lts-alpine>\" npm"
+alias dnpx="ddocker run -it --rm \"node:<DOCKER_NPM_VERSION|DOCKER_NODE_VERSION|lts-alpine>\" npx"
 
 # rust
-alias dcargo="dcmd rust cargo"
+alias dcargo="ddocker run -it --rm ghcr.io/mikojs/rust:main cargo"
+
+dyarn $@
