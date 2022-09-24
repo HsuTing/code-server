@@ -49,7 +49,6 @@ COPY ./root /root
 RUN vim +PluginInstall +qall &>/dev/null
 
 # bin
-COPY --from=base /bin/dcmd /bin/dcmd
 COPY --from=base /bin/dpsql /bin/dpsql
 
 # env
