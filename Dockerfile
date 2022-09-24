@@ -51,5 +51,8 @@ RUN vim +PluginInstall +qall &>/dev/null
 COPY --from=base /bin/dnode /bin/dnode
 COPY --from=base /bin/dpsql /bin/dpsql
 
+# env
+ENV CARGO_HOME=/root/.cache/.cargo
+
 # run
 ENTRYPOINT ["entrypoint", "code-server /root/work"]
