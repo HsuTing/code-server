@@ -51,9 +51,10 @@ RUN vim +PluginInstall +qall &>/dev/null
 # bin
 COPY --from=base /bin/dpsql /bin/dpsql
 
-# env
+# cache
 ENV NPM_CONFIG_CACHE=/root/.cache/.npm
 ENV CARGO_HOME=/root/.cache/.cargo
+ENV HISTFILE=/root/.cache/zsh_history
 
-# run
-ENTRYPOINT ["entrypoint", "code-server /root/work"]
+## volumes
+VOLUME ["/root/.ssh", "/root/.cache"]

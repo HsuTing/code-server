@@ -1,7 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME=""
-HISTFILE="$HOME/.cache/zsh_history"
 plugins=(gitfast zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
