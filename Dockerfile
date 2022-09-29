@@ -55,5 +55,5 @@ COPY --from=base /bin/dpsql /bin/dpsql
 ENV NPM_CONFIG_CACHE=/root/.cache/.npm
 ENV CARGO_HOME=/root/.cache/.cargo
 
-# run
-ENTRYPOINT ["entrypoint", "code-server /root/work"]
+## volumes
+VOLUME ["/root/.ssh", "/root/.cache"]
