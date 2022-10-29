@@ -20,9 +20,7 @@ RUN apk add \
   tmux
 RUN yarn global add \
   commitizen \
-  cz-conventional-changelog \
-  # FIXME: if not re-install, would miss some modules
-  code-server@4.4.0
+  cz-conventional-changelog
 
 # gh
 RUN gh config set -h github.com git_protocol ssh && \
