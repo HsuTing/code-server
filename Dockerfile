@@ -48,6 +48,7 @@ COPY ./root /root
 RUN vim +PluginInstall +qall &>/dev/null
 
 # bin
+COPY --from=base /bin/ddocker /bin/ddocker
 COPY --from=base /bin/dpsql /bin/dpsql
 
 # cache
