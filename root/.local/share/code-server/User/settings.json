@@ -6,6 +6,7 @@
   "html.autoClosingTags": false,
   "javascript.autoClosingTags": false,
   "typescript.autoClosingTags": false,
+  "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.autoSave": "off",
   "security.workspace.trust.untrustedFiles": "open",
