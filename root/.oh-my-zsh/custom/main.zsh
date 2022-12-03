@@ -9,3 +9,6 @@ alias dnpx="ddocker run -it --rm \"node:<DOCKER_NPM_VERSION|DOCKER_NODE_VERSION|
 
 # rust
 alias dcargo="ddocker run -it --rm ghcr.io/mikojs/rust:main cargo"
+
+# dsq
+alias ddsq="ddocker run -it --rm ghcr.io/mikojs/dsq:main"
