@@ -40,7 +40,6 @@ RUN code-server --install-extension vscodevim.vim
 RUN code-server --install-extension shardulm94.trailing-spaces
 RUN code-server --install-extension ms-azuretools.vscode-docker
 RUN code-server --install-extension GrapeCity.gc-excelviewer
-RUN code-server --install-extension tomoki1207.pdf
 RUN mkdir /root/work
 
 # config
