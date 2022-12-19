@@ -1,15 +1,16 @@
 {
-  "workbench.colorTheme": "Default Dark+",
-  "editor.tabSize": 2,
-  "terminal.integrated.defaultProfile.linux": "tmux",
   "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "files.autoSave": "off",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
   "html.autoClosingTags": false,
   "javascript.autoClosingTags": false,
-  "typescript.autoClosingTags": false,
-  "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "files.autoSave": "off",
   "security.workspace.trust.untrustedFiles": "open",
-  "workbench.startupEditor": "none",
-  "workbench.panel.defaultLocation": "right"
+  "terminal.integrated.defaultProfile.linux": "tmux",
+  "typescript.autoClosingTags": false,
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.panel.defaultLocation": "right",
+  "workbench.startupEditor": "none"
 }
