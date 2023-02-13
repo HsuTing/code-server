@@ -46,7 +46,7 @@ RUN code-server --install-extension shardulm94.trailing-spaces
 RUN code-server --install-extension ms-azuretools.vscode-docker
 RUN code-server --install-extension GrapeCity.gc-excelviewer
 RUN code-server --install-extension sndst00m.markdown-github-dark-pack
-RUN code-server --install-extension rust-lang.rust
+RUN code-server --install-extension rust-lang.rust-analyzer
 
 # config
 COPY ./root /root
