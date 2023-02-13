@@ -35,12 +35,18 @@ RUN curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/in
 RUN git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 RUN git clone https://github.com/sindresorhus/pure ~/.zsh/pure
 
+# rust
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
+
+ENV PATH="/root/.cargo/bin:$PATH"
+
 # code-server
 RUN code-server --install-extension vscodevim.vim
 RUN code-server --install-extension shardulm94.trailing-spaces
 RUN code-server --install-extension ms-azuretools.vscode-docker
 RUN code-server --install-extension GrapeCity.gc-excelviewer
 RUN code-server --install-extension sndst00m.markdown-github-dark-pack
+RUN code-server --install-extension rust-lang.rust
 
 # config
 COPY ./root /root
