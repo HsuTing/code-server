@@ -1,5 +1,5 @@
 # code
-alias code="code-server"
+alias code="code-server --goto"
 
 # node
 alias dnode="ddocker run -it --rm \"node:<DOCKER_NODE_VERSION|lts-alpine>\""
